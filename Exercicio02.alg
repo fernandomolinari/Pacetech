@@ -6,7 +6,11 @@ var
 a : real
 v1, v2, v3, v4 : real
 c, q, dolar, q1, reais : real
+opcao : caracter
 inicio
+Escreval("Deseja converter? s para SIM e n para NÃO")
+Leia(opcao)
+Enquanto opcao <> "n" faca
 Escreval("Digite o valor do câmbio do dólar:")
 Leia(c)
 Escreval("1 - Conversor Celsius p/ Fahrenheit")
@@ -40,4 +44,7 @@ reais <- q1 * c
 Escreval("A quantidade em reais é:")
 Escreval(reais)
 fimescolha
+Escreval("Gostaria de fazer mais alguma conversão? S para SIM e N para NÃO")
+Leia (opcao)
+fimenquanto
 fimalgoritmo
